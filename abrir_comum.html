@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Comum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <link rel="import" href="index.html" itemref="header">
+    <h1>Ticket Comum</h1>
+
+    <div>
+        <p>
+            Nome: <input type="text" name="nome" id="nome">
+        </p>
+        <p>Empresa: <input type="text" name="empresa" id="empresa"></p>
+        <p>Telefone: <input type="tel" name="tel" id="tel"></p>
+        <p>E-mail: <input type="email" name="email" id="email"></p>
+        <p>Produtos: <select name="produtos" id="produtos" required>
+            <option value="spotware">SpotWare</option>
+            <option value="signa">Signa</option>
+            <option value="shiftware">ShiftWare</option>
+            <option value="smartware">SmartWare</option>
+            <option value="audioware">AudioWare</option>
+            <option value="logware">LogWare</option>
+            <option value="cgware">CGWare</option>
+            <option value="nasware">NasWare</option>
+            <option value="ingestware">IngestWare</option>
+            <option value="newsclient">NewsClient</option>
+            <option value="newsware">NewsWare</option>
+            <option value="velon">Velon</option>
+        </select> </p>
+        <p>Numero de Série: <input type="text" name="sn" id="sn"></p>
+        <p>Data da ocorrência: <input type="date" name="data" id="data"></p>
+        <p>Horário aproximado: <input type="time" name="hora" id="hora"></p>
+        <p>Assunto: <input type="text" name="assunto" id="assunt"></p>
+        <p>Descrição: <p>
+            <textarea name="texto" id="texto" cols="60" rows="10" ></textarea>
+        </p></p>
+        <button type="submit">Enviar</button>
+        
+    </div>
+    <p><a href="index.html" rel="prev" target="_self" >Pagina Inicial</a></p>
+    
+</body>
+</html>
