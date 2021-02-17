@@ -4,36 +4,108 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background-image: linear-gradient(to right, #ffffff, #ffffff);
-}
-main{
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(136, 109, 93, 0.616);
-    width: auto;
-    padding: 10px;
-    margin: auto;
-}
-
-header{
+header
+{
+    margin: 10px;
     font-size: 22px;
     color: white;
     background-color: #186EAC;
     text-align: center;
     text-shadow: 1px 1px 2px #005fa3;
+    border-radius: 8px;
 }
 
-h2{
-    color: #6B11C2;
+body
+{
+    background-image: linear-gradient(to right, #ffffff, #ffffff);
 }
 
-p{
+hr
+{
+    background-image: radial-gradient(#202020, white);
+    height: 2px;
+    border-radius: 30px;
+    margin: 50px 20px 50px 20px;
+}
+
+p
+{
     text-align: justify;
+    text-indent: 20px;
 }
 
-footer{
+section#intro h2
+{
+    color: black;
+}
+
+section#premium h2
+{
+    
+    background-color: rgb(255, 134, 134);
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+}
+
+section#premium p
+{
+    margin: 0px 0px 50px 0px;
+}
+
+section#comum h2
+{
+    background-color: rgb(133, 133, 255);
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+}
+
+section#envios h2
+{
+    color: black;
+}
+
+a:link 
+{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+a:visited 
+{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+a:hover 
+{
+    text-decoration: underline;
+}
+
+a:active 
+{
+    text-decoration: underline;
+}
+
+main
+{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(136, 109, 93, 0.616);
+    width: auto;
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+}
+
+
+
+footer
+{
     margin: 10px;
     font-size: 12px;
     font-style: italic;
+    text-align: end;
 }
