@@ -13,25 +13,116 @@ header
     white-space: nowrap;
     min-width: fit-content;
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: #186EAB;
 }
 
 .div_titulo
 {
     margin: auto;
+    position: relative;
 }
 
-
-.div_titulo h1
+/* Se o tamanho da tela for 601 ou mais, muda o font-size para 32px */
+@media screen and (min-width: 601px)
 {
-    color: white;
-    text-shadow: 2px 2px 1px rgb(24, 68, 99);
+
+    .div_titulo h1
+    {
+        font-size: 32px;
+        color: rgba(255, 255, 255);
+        text-shadow: 1px 1px 1px rgb(153, 213, 255);        
+    }
+
+    main
+    {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 4px 5px rgba(24, 110, 171, 0.4);
+        width: auto;
+        padding: 30px 50px 50px 50px;
+        margin: 10px 60px 10px 60px;
+    }
+}
+
+@media screen and (min-width: 900px)
+{
+    main
+    {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 4px 5px rgba(24, 110, 171, 0.4);
+        width: auto;
+        padding: 30px 50px 50px 50px;
+        margin: 10px 100px 10px 100px;
+    }
+}
+
+@media screen and (min-width: 1200px)
+{
+
+    
+    main
+    {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 4px 5px rgba(24, 110, 171, 0.4);
+        width: auto;
+        padding: 30px 50px 50px 50px;
+        margin: 10px 200px 10px 200px;
+    }
+}
+
+@media screen and (min-width: 1600px)
+{
+    main
+    {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 4px 5px rgba(24, 110, 171, 0.4);
+        width: auto;
+        padding: 30px 50px 50px 50px;
+        margin: 10px 350px 10px 350px;
+    }
+}
+
+/* Se o tamanho da tela for 600 ou menor, muda o font-size para 20px */
+@media screen and (max-width: 600px)
+{
+    .div_titulo
+    {
+        margin: auto;
+    }
+
+    .div_titulo h1
+    {
+        font-size: 20px;
+        color: rgba(255, 255, 255);
+        text-shadow: 0.5px 0.5px 1px rgb(153, 213, 255);
+    }
+
+    main
+    {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 4px 5px rgba(24, 110, 171, 0.4);
+        width: auto;
+        padding: 30px 50px 50px 50px;
+        margin: 10px 50px 10px 50px;
+    }
 }
 
 .div_logo
 {
     margin: auto 10px;
+}
+
+.div_login
+{
+    margin: auto 10px;
+    width: 170px;
+    text-align: center;
+    color: white;
 }
 
 hr
@@ -42,21 +133,27 @@ hr
     margin: 50px 20px 50px 20px;
 }
 
+main h2
+{
+    color: rgb(62, 62, 62);
+}
+
 p
 {
+    margin-top: 10px;
     text-align: justify;
     text-indent: 20px;
+    line-height: 25px;
 }
 
 section#intro h2
 {
-    color: black;
+    margin-top: 30px;
 }
 
 section#premium h2
 {
-    
-    background-color: #c24540;
+    background-color: #c28330;
     border-radius: 10px;
     width: 210px;
     text-align: center;
@@ -65,7 +162,7 @@ section#premium h2
 
 section#premium p
 {
-    margin: 0px 0px 50px 0px;
+    margin-bottom: 50px;
 }
 
 section#comum h2
@@ -75,11 +172,6 @@ section#comum h2
     width: 210px;
     text-align: center;
     padding: 5px;
-}
-
-section#envios h2
-{
-    color: black;
 }
 
 a:link 
@@ -104,17 +196,19 @@ a:active
     color: rgba(0, 0, 0, 0.1);
 }
 
-main
+address h2
 {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
-    width: auto;
-    padding: 10px 20px 10px 20px;
-    margin: 10px;
+    margin-bottom: 10px;
+    font-style: normal;
 }
 
 
+
+address
+{
+    margin-top: 20px;
+    line-height: 25px;
+}
 
 footer
 {
@@ -122,4 +216,76 @@ footer
     font-size: 12px;
     font-style: italic;
     text-align: end;
+}
+
+form input
+{
+    padding: 5px;
+    margin: 10px;
+    width: 250px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #186EAB;
+    border-width: 2px;
+
+}
+
+input#data
+{
+    width: fit-content;
+}
+
+input#hora
+{
+    width: fit-content;
+}
+
+input#sn
+{
+    width: 110px;
+}
+
+form label
+{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+form select
+{
+    padding: 5px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #186EAB;
+    border-width: 2px;
+
+}
+
+label#descricao
+{
+    display: block;
+    margin: 10px 0px 5px 0px;
+    width: 170px;
+    
+}
+
+form textarea
+{
+    font-size: 16px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #186EAB;
+    border-width: 2px;
+    padding: 10px;
+    max-width: 55vw;
+    
+}
+
+input#logs
+{
+    width: 415px;
+    margin-left: 0px;
+    max-width: 55vw;
 }
