@@ -6,25 +6,34 @@
 
 header
 {
+    height: 60px;
+    background-color: #186EAB;
+    border-radius: 5px;
     margin: 10px;
-    font-size: 22px;
-    color: white;
-    background-color: #186EAC;
-    text-align: center;
-    text-shadow: 1px 1px 2px #005fa3;
-    border-radius: 8px;
+
 }
 
-body
+header h1
 {
-    background-image: linear-gradient(to right, #ffffff, #ffffff);
+    color: white;
+    text-shadow: 1px 1px 2px #005fa3;
+    text-align: center;
+    margin: 0px 170px 0px 0px;
+    line-height: 2;
 }
+
+header img
+{
+    float: left;
+    margin: 5px 0px 0px 20px;
+}
+
 
 hr
 {
-    background-image: radial-gradient(#202020, white);
-    height: 2px;
-    border-radius: 30px;
+    background-image: radial-gradient(#186daa4d, #ffffff);
+    height: 1px;
+    border-style: hidden;
     margin: 50px 20px 50px 20px;
 }
 
@@ -42,9 +51,9 @@ section#intro h2
 section#premium h2
 {
     
-    background-color: rgb(255, 134, 134);
-    border-radius: 15px;
-    width: 200px;
+    background-color: #c24540;
+    border-radius: 10px;
+    width: 210px;
     text-align: center;
     padding: 5px;
 }
@@ -56,9 +65,9 @@ section#premium p
 
 section#comum h2
 {
-    background-color: rgb(133, 133, 255);
-    border-radius: 15px;
-    width: 200px;
+    background-color: #3cc264;
+    border-radius: 10px;
+    width: 210px;
     text-align: center;
     padding: 5px;
 }
@@ -70,31 +79,31 @@ section#envios h2
 
 a:link 
 {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
 a:visited 
 {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.4);
     text-decoration: none;
 }
 
 a:hover 
 {
-    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 a:active 
 {
-    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.1);
 }
 
 main
 {
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(136, 109, 93, 0.616);
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
     width: auto;
     padding: 10px 20px 10px 20px;
     margin: 10px;
