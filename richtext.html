@@ -40,7 +40,7 @@
         <button onclick="execCommandWithArg('createLink', prompt('Enter a URL', 'http://'));"><i class="fas fa-link"></i></button>
         <button onclick="execCmd('unlink');"><i class="fas fa-unlink"></i></button>
         <button onclick="toggleSource();"><i class="fas fa-code"></i></button>
-        <button onclick="toggleEdit();">Toggle Edit</button>
+        <button onclick="toggleEdit();">Editável</button>
         <select onchange="execCommandWithArg('fontName', this.value);">
             <option value="Arial">Arial</option>
             <option value="Comic Sans MS">Comic Sans MS</option>
@@ -63,19 +63,12 @@
         Fundo: <input type="color"onchange="execCommandWithArg('hiliteColor', this.value);"/>
         <button onclick="execCommandWithArg('insertImage', prompt('Digite a URL da imagem', ''));"><i class="far fa-file-image"></i></button>
         <button onclick="execCmd('selectAll');">Selecionar Tudo</i></button>
-        
-        
-        
-        
-        
-        
     </div>
-    <iframe name="richTextField" style="width: 1000px; height: 500px;"></iframe>
+    <iframe name="richTextField" id="richTextField" style="width: 1000px; height: 500px;"></iframe>
     
-    <script type="text/javascript">
-        
+    <script>
         var showingSourceCode = false;
-        var isEditMode = true;
+        var isInEditMode = true;
         
         function enableEditMode ()
         {
@@ -90,7 +83,7 @@
             richTextField.document.execCommand(command, false, arg);
         }
         
-        function toggleSource(params) {
+        function toggleSource() {
             if (showingSourceCode) 
             {
                 richTextField.document.getElementByTagName('body')[0].innerHTML = richTextField.document.getElementByTagName('body')[0].textContent;
@@ -103,19 +96,19 @@
             }
         }
         
-        function toggleEdit() {
-            if (isInEditMode)
+        function toggleEdit() 
+        {
+            if (isInEditMode == true)
             {
                 richTextField.document.designMode = 'Off';
                 isInEditMode = false;
             }
-            else
+            else if (isInEditMode == false)
             {
                 richTextField.document.designMode = 'On';
                 isInEditMode = true;
             }
         }
-        
     </script>
     
 </body>
