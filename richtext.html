@@ -39,7 +39,6 @@
         <button onclick="execCmd('insertHorizontalRule');">Linha</button>
         <button onclick="execCommandWithArg('createLink', prompt('Enter a URL', 'http://'));"><i class="fas fa-link"></i></button>
         <button onclick="execCmd('unlink');"><i class="fas fa-unlink"></i></button>
-        <button onclick="toggleSource();"><i class="fas fa-code"></i></button>
         <button onclick="toggleEdit();">Editável</button>
         <select onchange="execCommandWithArg('fontName', this.value);">
             <option value="Arial">Arial</option>
@@ -67,7 +66,6 @@
     <iframe name="richTextField" id="richTextField" style="width: 1000px; height: 500px;"></iframe>
     
     <script>
-        var showingSourceCode = false;
         var isInEditMode = true;
         
         function enableEditMode ()
@@ -75,25 +73,14 @@
             richTextField.document.designMode = 'On';
         }
         
-        function execCmd(command) {
+        function execCmd(command) 
+        {
             richTextField.document.execCommand(command, false, null);
         }
         
-        function execCommandWithArg(command, arg) {
+        function execCommandWithArg(command, arg)
+        {
             richTextField.document.execCommand(command, false, arg);
-        }
-        
-        function toggleSource() {
-            if (showingSourceCode) 
-            {
-                richTextField.document.getElementByTagName('body')[0].innerHTML = richTextField.document.getElementByTagName('body')[0].textContent;
-                showingSourceCode = false;
-            }
-            else
-            {
-                richTextField.document.getElementByTagName('body')[0].innerHTML = richTextField.document.getElementByTagName('body')[0].textContent;
-                showingSourceCode = true;
-            }
         }
         
         function toggleEdit() 

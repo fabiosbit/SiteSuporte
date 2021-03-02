@@ -271,20 +271,29 @@ label#descricao
     
 }
 
-form textarea
+div#richtextbtns input
 {
-    font-size: 16px;
+    margin: 0px;
+    width: 20px;
+    border-style: none;
+}
+
+iframe
+{
+    resize: both;
     border-style: solid;
     border-radius: 5px;
     border-color: #186EAB;
     border-width: 2px;
     padding: 10px;
     max-width: 55vw;
-    
+    min-width: 25.3em;
+    min-height: 10em;
 }
 
 input#logs
 {
+    display: block;
     width: 415px;
     margin-left: 0px;
     max-width: 55vw;
