@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticket Premium</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Ticket Premium</h1>
-    <div>
-        <h2>Insira o número de série do equipamento</h2>
-        <p><input type="text" name="sn" id="sn"></p>
-        <button type="submit">Verificar</button>
-    </div>
-    <p><a href="index.html" rel="prev" target="_self">Página incial</a></p>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ticket Premium</title>
+		<link rel="stylesheet" href="estilos/geral.css" />
+		<link rel="stylesheet" href="estilos/reset.css" />
+	</head>
+	<body>
+		<header>
+			<div class="div_logo">
+				<a href="https://www.floripatec.com.br/" rel="external" target="_self"
+					><img src="imagens/logomarca_branca.png" alt="Logo_b" width="170" height="50"
+				/></a>
+			</div>
+			<div class="div_titulo">
+				<h1>Ticket Premium</h1>
+			</div>
+			<div class="div_login">Login</div>
+		</header>
+
+		<main>
+			<h2>Abrir novo ticket</h2>
+
+			<p>Para abrir um ticket premium é necessário informar o número de série do equipamento.</p>
+			<p>O número de série é formado por 15 números e fica localizado em uma etiqueta na parte trazeira do gabinete.</p>
+			<p>FOTO ETIQUETA</p>
+			<p>Ele também pode ser encontrado nas informações do sistema operacional.</p>
+			<p>FOTO SISTEMA</p>
+
+			<form>
+				<label for="sn">Número de Série:</label>
+				<input type="text" name="sn" id="sn" /> <br />
+				<button type="submit">Verificar</button>
+			</form>
+		</main>
+
+		<p><a href="index.html" rel="prev" target="_self">Página incial</a></p>
+
+		<footer>Desenvolvido por Fábio</footer>
+	</body>
 </html>
